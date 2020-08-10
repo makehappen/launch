@@ -8,6 +8,7 @@
 
 # create ec2 instance from aws image
 aws ec2 run-instances \
+    --profile $AWS_PROFILE \
     --image-id $AWS_IMAGE_ID \
     --count 1 \
     --instance-type t3.nano \

@@ -1,10 +1,18 @@
 # launch
 
+## Pre-requisites
+
+### AWS CLI
+[https://aws.amazon.com/cli/](https://aws.amazon.com/cli/)
+
+### AWS CLI User Profile
+[https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html)
 
 ## Images
 
 ### Create New Image
 ```bash
+AWS_PROFILE=...
 AWS_IMAGE=...
 AWS_IMAGE_CONFIG=... 
 . src/image/create.sh
@@ -20,6 +28,7 @@ AWS_IMAGE_CONFIG=...
 
 ### Launch New Server
 ```bash
+AWS_PROFILE=...
 LAUNCH_CONFIG=...
 . src/server/launch.sh
 ```

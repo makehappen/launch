@@ -8,6 +8,7 @@
 
 # create ec2 instance from owned image
 aws ec2 run-instances \
+    --profile $AWS_PROFILE \
     --image-id $AWS_IMAGE_ID \
     --count 1 \
     --instance-type $AWS_INSTANCE_TYPE \
