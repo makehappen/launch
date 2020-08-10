@@ -1,0 +1,5 @@
+RedirectMatch 404 /\.git
+RedirectMatch 404 /\.secrets
+RedirectMatch 404 /\.env
+RedirectMatch 404 /*\.ini
+RedirectMatch 404 /*\.encrypted
