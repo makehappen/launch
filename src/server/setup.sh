@@ -23,3 +23,6 @@ ssh -i $AWS_PEM_KEY_PATH ubuntu@$SERVER_IP "sudo mv ~/.ssh/authorized_keys_temp 
 
 # upload composer_auth
 . src/server/update/composer-auth.sh
+
+# add custom vhosts
+. src/server/update/add-vhosts.sh

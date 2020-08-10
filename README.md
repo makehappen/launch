@@ -12,15 +12,15 @@
 
 ### Create New Image
 ```bash
-AWS_PROFILE=...
-AWS_IMAGE=...
-AWS_IMAGE_CONFIG=... 
+AWS_PROFILE=
+AWS_IMAGE=
+AWS_IMAGE_CONFIG= 
 . src/image/create.sh
 ```
 ### Build New Image
 ```bash
-IMAGE_IP=... 
-AWS_IMAGE_CONFIG=...
+IMAGE_IP= 
+AWS_IMAGE_CONFIG=
 . src/image/build.sh
 ```
 
@@ -28,30 +28,35 @@ AWS_IMAGE_CONFIG=...
 
 ### Launch New Server
 ```bash
-AWS_PROFILE=...
-LAUNCH_CONFIG=...
+AWS_PROFILE=
+LAUNCH_CONFIG=
 . src/server/launch.sh
 ```
 ### Setup New Server
 ```bash
-SERVER_IP=...
+SERVER_IP=
 . src/server/setup.sh
 ```
 ### Maintain Server
 
 #### Get Server SSH KEY
 ```bash
-SERVER_IP=...
+SERVER_IP=
 . src/server/get-ssh-key.sh
 ```
 #### Update Authorized Keys
 ```bash
-SERVER_IP=...
+SERVER_IP=
 . src/server/update/authorized-keys.sh
 ```
 
 #### Update Composer Auth
 ```bash
-SERVER_IP=...
+SERVER_IP=
 . src/server/update/composer-auth.sh
+```
+#### Update vHosts
+```bash
+SERVER_IP=
+. src/server/update/add-vhosts.sh
 ```
